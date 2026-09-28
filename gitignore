@@ -1,0 +1,36 @@
+# Data (do not commit large / controlled-access data)
+data/velmeshev/
+data/wamsley_2024/
+data/sfari/
+*.h5ad
+*.rds
+*.mtx
+*.loom
+*.fastq.gz
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+.ipynb_checkpoints/
+
+# Results / large outputs (keep ranked_gene_lists, ignore heavy artifacts)
+results/**/*.npy
+results/**/*.npz
+figures/*.pdf
+figures/*.png
+
+# Synapse cache & credentials — NEVER commit tokens
+.synapseCache/
+.synapseConfig
+*token*
+*.pem
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

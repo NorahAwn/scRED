@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated manuscript and Zenodo archive."
+title: "scRED: cell-graph reconstruction-error deviation for disease-gene prioritisation from snRNA-seq"
+authors:
+  - family-names: Awn
+    given-names: Norah Saeed
+  - family-names: Zhao
+    given-names: Mengyuan
+  - family-names: Ba Mahel
+    given-names: Mansoor S. M.
+  - family-names: Bamahel
+    given-names: Abdulaziz S.
+  - family-names: Tang
+    given-names: Jijun
+license: MIT
+repository-code: "https://github.com/NorahAwn/GeneGCN"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.21132225
+version: "1.0.0"
+date-released: 2026-09-28
