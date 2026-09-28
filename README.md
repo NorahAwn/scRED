@@ -1,12 +1,13 @@
 # scRED — single-cell Reconstruction-Error Deviation
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23010003.svg)](https://doi.org/10.5281/zenodo.23010003)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 Control-trained, graph-aware prioritisation of disease risk genes from single-nucleus RNA-seq.
 
 scRED is a graph-convolutional autoencoder built on a **cell–cell** similarity graph (not a gene–gene graph). The model is trained on control cortical cells only; genes are ranked by the per-gene deviation in reconstruction error between patient and control cells (RED). Applied to the Velmeshev et al. ASD cortex cohort, scRED recovers SFARI-curated risk genes specifically in cortical neurons and not in glia.
 
-> **Repository note:** this repository is named `GeneGCN`, reflecting an earlier name of the method now described as **scRED**.
-
-📄 Associated manuscript: *"Cell-graph reconstruction error prioritises autism risk genes in cortical neurons but not glia"* (submitted, BMC Bioinformatics).
+📄 Associated manuscript: *"scRED: Cell-Graph Reconstruction Error Prioritises Autism Risk Genes in Cortical Neurons"* (submitted, BMC Bioinformatics).
 
 ---
 
@@ -23,8 +24,8 @@ scRED is a graph-convolutional autoencoder built on a **cell–cell** similarity
 ## Installation
 
 ```bash
-git clone https://github.com/NorahAwn/GeneGCN.git
-cd GeneGCN
+git clone https://github.com/NorahAwn/scRED.git
+cd scRED
 python -m venv .venv
 # Windows: .venv\Scripts\activate   |   Linux/macOS: source .venv/bin/activate
 pip install -r requirements.txt
@@ -91,11 +92,14 @@ scRED cell-graph autoencoder and RED scoring), `gene_filter.py`,
 
 ## Citation
 
-If you use this code, please cite the manuscript (see `CITATION.cff`) and archive:
+If you use this software, please cite it (see `CITATION.cff`):
 
-> Zenodo: https://doi.org/10.5281/zenodo.21132225
+> Awn, N. S., Zhao, M., Ba Mahel, M. S. M., Bamahel, A. S., & Tang, J. (2026).
+> *scRED: cell-graph reconstruction-error deviation for disease-gene prioritisation
+> from snRNA-seq* (Version v2.0.0) [Computer software]. Zenodo.
+> https://doi.org/10.5281/zenodo.23010003
 
-When using the Velmeshev data, cite Velmeshev et al., *Science* 2019, and the SFARI Gene database.
+When using the Velmeshev data, also cite Velmeshev et al., *Science* 2019, and the SFARI Gene database.
 
 ## License
 
